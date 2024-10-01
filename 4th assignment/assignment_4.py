@@ -61,6 +61,7 @@ if __name__ == '__main__':
     x = np.linspace(0., 1., 4)
     y = np.exp(x)
     pdf = PDF(x,y) #pdf è un'istanza della classe PDF
+    print(id(pdf))
     x0 = 0.5
     print(np.exp(x0), pdf(x0))
     print(pdf.integral(0., 1.))
